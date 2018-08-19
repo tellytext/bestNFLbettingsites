@@ -1,0 +1,54 @@
+<header>
+<!--Optional brand image-->
+<!--<div class="navbar-header">-->
+	<!--<a class="navbar-brand" href="/">-->
+		<!--<img style="max-width:120px; max-width:75px; margin-top: -7px;" src="{{ url_for('static', filename='images/mainlogo.jpg') }}" alt="Top US Betting Sites">-->
+	<!--</a>-->
+<!--</div>-->
+
+<div class="container-fluid">
+	<a href="/">
+		<button type="button" class="btn btn-primary" aria-label="Left Align" style="margin-top: 5px; margin-bottom: 5px; height:42px; margin-right: 5px;">
+			<span class="glyphicon glyphicon-home" aria-hidden="true" style="margin-right: 2px;"></span>
+			Home
+		</button>
+	</a>
+
+	<ul class="nav navbar-nav navbar-right">
+		<div style="margin-right: 10px; margin-left: 15px;  margin-top: 15px; margin-bottom: 5px;" class="container-fluid">
+			<a href="/" style="display: inline-block; margin-right: 10px;"><span class="glyphicon glyphicon-ok"></span> NFL Betting </a>
+			<a href="/betting-promotions/" style="display: inline-block; margin-right: 10px;"><span class="glyphicon glyphicon-usd"></span> Betting Promotions </a>
+			<a href="/" style="display: inline-block; margin-right: 10px;"><span class="glyphicon glyphicon-usd"></span> Deposit Bonus </a>
+			<a href="/" style="display: inline-block; margin-right: 10px;"><span class="glyphicon glyphicon-usd"></span> No Deposit Bonus </a>
+			<a href="/top-rated-betting-sites" style="display: inline-block; margin-right: 10px;"><span class="glyphicon glyphicon-pencil"></span> Top Rated Betting Sites </a>
+			<a href="/about-us" style="display: inline-block; margin-right: 10px;"><span class="glyphicon glyphicon-info-sign"></span> About Us </a>
+		</div>
+	</ul>
+</div>
+</header>
+<body>
+<div class="border-row" style="width: 100%; margin-border: 15px;"></div>
+
+<div class="container-fluid" style="min-height:100%;" align="center">
+
+{% block body %}
+
+{% endblock %}
+</div>
+
+<script type="text/javscript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javscript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123651462-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123651462-1');
+</script>
+</body>
+
+{% include "footer.html" %}
+
+</html>

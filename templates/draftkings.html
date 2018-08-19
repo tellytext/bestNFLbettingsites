@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='helmet-favicon.ico') }}">
+	<title>DraftKings NFL Betting - Best NFL Betting Sites</title>
+</head>
+
+{% extends "navbar.html" %}
+
+{% block body %}
+
+<!-- Start of second Navigation -->
+{% include "second-navbar.html" %}
+<!-- End of second Navigation -->
+
+<!-- Start of DraftKings Large TLM -->
+<div class="container" style="margin-bottom:10px">
+    <img style="width:96%; height:100px; display:block;" src="{{ url_for('static', filename='images/black-draftkings-top-banner.jpg') }}" alt="DraftKings Sportsbook Offer">
+
+</div>
+
+<!-- DraftKings Large TLM End -->
+
+
+<div class="container" align="left" style="width:80%;margin-bottom:25px">
+    <!-- Start of Small Betting Table -->
+    {% include "small-betting-table.html" %}
+    <!-- End of Small Betting Table -->
+
+    <!-- Start of DraftKings container -->
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img style="max-width:135px; max-height:120px; display:block;" src="{{ url_for('static', filename='images/draft-kings-small-tlm.jpg') }}" alt="DraftKings Online Sports Betting">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="/"><button style="display:block; float:right;" type="button" class="btn btn-success btn-lg">Join Now</button></a>
+            <h1 class="media-heading">DraftKings Sportsbook - Sports Betting</h1><p><strong>Number 1 Online Sportsbook & Casino Provider <span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-ok"></span></strong>
+            <p>Bovada’s one-stop-shop account allows play in their online sports betting section, racebook and casino with just one account. It offers a 50% deposit bonus to new sports clients up to a $250 bonus. There is no code needed as you simply redeem this offer through your account.<br>
+                This bonus figure rises to $500 if you are depositing using Bitcoin (code: BVSBITCOIN50). They cover all markets including NFL, MLB, NBA, NHL and so much more. Bovada was Bodog US, an industry leader in the American betting market for 14 years and recognized for their service in USA Today, CNN and The New York Times. <br>
+                This newer brand carries on that excellent service and is, in our view, the best of the USA sports betting sites. Canadians can not join Bovada but they can still join Bodog. Bovada is for United States and Mexico players only and no other nationalities can join. This honest bookie has the best payments system of any offshore sportsbook. It is the best option for US bettors for all sports gambling and is strongly recommended.
+        <br><a style="text-decoration:none;">Join Bovada Today »</a>
+        </p>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <!-- End of DraftKings container -->
+</div>
+
+{% include "large-betting-table.html" %}
+
+{% include "news-3-box.html" %}
+
+{% include "top-offers-3-box.html" %}
+
+{% include "betting-highlights-text.html" %}
+
+{% endblock %}
+
+</html>

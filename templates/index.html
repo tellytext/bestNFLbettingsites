@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='helmet-favicon.ico') }}">
+	<title>Best NFL Betting Sites - Online Sports Betting Comparison Site</title>
+</head>
+
+{% extends "navbar.html" %}
+
+{% block body %}
+<section class="jumbotron text-center" style="margin-top:5px; margin-bottom: 0px; background-image: url({{ url_for('static', filename='images/tlm-3.jpg') }}); background-repeat: no-repeat;">
+    <div class="container">
+        <h1 class="jumbotron-heading"><span style="color:#000000;background:#FFFFFF;box-shadow: 10px 0 0 #FFFFFF, -10px 0 0 #FFFFFF;">Best NFL Betting Sites</span></h1>
+        <h2 class="lead text-muted"><span style="color:#000000;background:#FFFFFF;box-shadow: 10px 0 0 #FFFFFF, -10px 0 0 #FFFFFF;"><strong>Compare The Best Websites For NFL Betting</strong></span></h2>
+        <p>
+        <a href="#comparison-table" class="btn btn-primary my-2"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Comparison Grid </a>
+        <a href="#comparison-table" class="btn btn-secondary my-2" style="color:#FFFFFF;background:#000000;"> Open Account Offers »</a>
+      </p>
+    </div>
+</section>
+
+<div class="container" style="width: 100%">
+    <div class="page-header">
+        <h2><span class="glyphicon glyphicon-thumbs-up"></span> Welcome To Top U.S. 10 Betting Sites</h2>
+        <small>Our team has examined and reviewed sports betting bonuses and offerings to bring you reputable operators with incredible deals. Pick a site from the chart below and get started now.</small>
+    </div>
+    <div class="btn-group btn-group-lg" style="width: 100%; margin-top: 10px; margin-bottom: 10px; font-size: 22px;" role="group" aria-label="">
+        <a href="/betting-offers"><button type="button" class="btn btn-default">What kind of betting offers are there?</button></a>
+        <a href="/best-betting-offer"><button type="button" class="btn btn-default">What is the best kind of betting offer for me?</button></a>
+        <a href="/how-do-online-betting-offers-differ"><button type="button" class="btn btn-default">How do online betting offers differ from each other?</button></a>
+        <a href="/what-are-the-best-betting-offers"><button type="button" class="btn btn-default">What are the best betting offers?</button></a>
+    </div>
+</div>
+
+{% include "large-betting-table.html" %}
+
+{% include "news-3-box.html" %}
+
+{% include "top-offers-3-box.html" %}
+
+{% include "betting-highlights-text.html" %}
+
+{% endblock %}
+
+</html>

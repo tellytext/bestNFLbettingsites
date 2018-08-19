@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='helmet-favicon.ico') }}">
+	<title>Best NFL Betting Sites - Online Sports Betting Comparison Site</title>
+</head>
+
+{% extends "navbar.html" %}
+
+{% block body %}
+
+<!-- Start of second Navigation -->
+{% include "second-navbar.html" %}
+<!-- End of second Navigation -->
+
+
+<div class="container" align="left" style="width:80%;margin-bottom:25px">
+    <div class="media">
+        <div class="media-right">
+            <a href="#">
+                <img style="width:574px%; height:500px; display:block;" src="{{ url_for('static', filename='images/error-page.jpg') }}">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="/"><button style="display:block; float:right;" type="button" class="btn btn-primary">Go Back</button></a>
+            <h2 class="media-heading">Oops..</h2><p><strong>You Have Reached An Error Page.</strong></p>
+            <p>We are sorry for the error, we are working hard to fix it.
+        <br><a style="text-decoration:none;">Return To The Homepage »</a>
+        </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+</html>
